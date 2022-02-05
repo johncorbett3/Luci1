@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styles.css">
     
-    <script type ="text/javascript" src="index.js"></script>
+    <script src="index.js"></script>
 
 </head>
 
@@ -74,26 +74,6 @@
     </div>
 
   </form>
-
-  
-  <script>
-    
-    function printConsole() {
-
-    var nameInput = document.getElementById('uname');
-    var passwordInput = document.getElementById('password');
-
-    document.querySelector('form.pure-form').addEventListener('submit', function (e) {
-
-    //prevent the normal submission of the form
-    e.preventDefault();
-
-    console.log(nameInput.value);    
-    console.log(passwordInput.value);
-});
-}
-
-</script>
 
 </body>
 
