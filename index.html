@@ -58,7 +58,7 @@
       <label for="psw"><b>Password</b></label>
       <input id="password" type="password" placeholder="Enter Password" name="psw" required>
   
-      <button type="submit">Login</button>
+      <button type="submit" onclick="printConsole()">Login</button>
       <label>
         <input type="checkbox" checked="checked" name="remember"> Remember me
       </label>
@@ -78,6 +78,8 @@
   
   <script>
     
+    function printConsole() {
+
     var nameInput = document.getElementById('uname');
     var passwordInput = document.getElementById('password');
 
@@ -89,6 +91,7 @@
     console.log(nameInput.value);    
     console.log(passwordInput.value);
 });
+}
 
 </script>
 
