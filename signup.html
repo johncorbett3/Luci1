@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styles.css">
 
-    <script type ="text/javascript" src="index.js"></script>
+    <script src="index.js"></script>
 
 </head>
 
@@ -39,7 +39,7 @@
 
 
 <!-- // This section creates the Signup form, copied from W3Schools  somewhere -->
-<form action="/action_page.php" style="border:1px solid #ccc"> 
+<form class="signup-form" action="/action_page.php" style="border:1px solid #ccc"> 
 
   <!-- // This is just a container for the Luci logo -->
     <div class="imgcontainer">
@@ -56,10 +56,10 @@
       <input id="userName" type="text" placeholder="Enter Email" name="email" required>
   
       <label for="psw"><b>Password</b></label>
-      <input id="passsword" type="password" placeholder="Enter Password" name="psw" required>
+      <input id="password" type="password" placeholder="Enter Password" name="psw" required>
   
       <label for="psw-repeat"><b>Repeat Password</b></label>
-      <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+      <input id="password" type="password" placeholder="Repeat Password" name="psw-repeat" required>
       
       <label>
         <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
@@ -71,7 +71,7 @@
       <!-- // Cancel and Sign Up buttons -->
       <div class="clearfix">
         <button type="button" class="cancelbtn">Cancel</button>
-        <button type="submit" class="signupbtn">Sign Up</button>
+        <button type="submit" class="signupbtn" onclick="signUpPrint()">Sign Up</button>
       </div>
       <!-- // End "Cance"l and Sign Up buttons -->
 
