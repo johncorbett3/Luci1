@@ -56,7 +56,7 @@
       <input id="uname" type="text" placeholder="Enter Username" name="uname" required>
   
       <label for="psw"><b>Password</b></label>
-      <input type="password" placeholder="Enter Password" name="psw" required>
+      <input id="password" type="password" placeholder="Enter Password" name="psw" required>
   
       <button type="submit">Login</button>
       <label>
@@ -79,6 +79,7 @@
   <script>
     
     var nameInput = document.getElementById('uname');
+    var passwordInput = document.getElementById('password');
 
     document.querySelector('form.pure-form').addEventListener('submit', function (e) {
 
@@ -86,6 +87,7 @@
     e.preventDefault();
 
     console.log(nameInput.value);    
+    console.log(passwordInput.value);
 });
 
 </script>
