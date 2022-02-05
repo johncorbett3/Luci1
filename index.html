@@ -36,13 +36,15 @@
     const analytics = getAnalytics(app);
   </script>
 
-<script>
+<!-- // Don't remember what this was doing; ignore for now -->
+<!-- <script>
   document.addEventListener("DOMContentLoaded", function() {
     testFunction();
 }
-</script>
+</script> -->
+// Don't remember what this was doing; ignore for now
 
-  <form action="action_page.php" method="post"> 
+  <form class="pure-form" action="action_page.php" method="post"> 
     
     <div class="imgcontainer">
       <img src="image\Luci Logo Centered v2.png" alt="Luci" class="Luci" width="110" height="71">
@@ -51,7 +53,7 @@
   
     <div class="container">
       <label for="uname"><b>Username</b></label>
-      <input type="text" placeholder="Enter Username" name="uname" required>
+      <input id="uname" type="text" placeholder="Enter Username" name="uname" required>
   
       <label for="psw"><b>Password</b></label>
       <input type="password" placeholder="Enter Password" name="psw" required>
@@ -72,6 +74,21 @@
     </div>
 
   </form>
+
+  
+  <script>
+    
+    var nameInput = document.getElementById('uname');
+
+    document.querySelector('form.pure-form').addEventListener('submit', function (e) {
+
+    //prevent the normal submission of the form
+    e.preventDefault();
+
+    console.log(nameInput.value);    
+});
+
+</script>
 
 </body>
 
